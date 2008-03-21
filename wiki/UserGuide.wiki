@@ -72,8 +72,8 @@ The entire Plugins tab consists of a list of all X-Plane plugins.  XAM looks for
 
 || *Column Title* || *Description* ||
 || Name || This is the name of the plugin.  There are a number of ways that a plugin can be packaged on disk, so this name may be taken either from the plugin filename or the folder containing the plugin.  See [PluginsAndXAM this page] for a more in-depth description of how XAM processes the plugins folder.  ||
-|| Enable || If a tick appears in this column, the plugin will load in X-Plane.  *If unchecked, the plugin will not be loaded in X-Plane*.  When you uncheck the 'Enable' checkbox, XAM will move the plugin on disk into a folder titled 'plugins (disabled), located in the `Resources` folder inside your X-Plane folder. || 
- 
+|| Enable || If a tick appears in this column, the plugin will load in X-Plane.  *If unchecked, the plugin will not be loaded in X-Plane*.  When you uncheck the 'Enable' checkbox, XAM will move the plugin on disk into a folder titled 'plugins (disabled), located in the `Resources` folder inside your X-Plane folder. ||
+
 Beneath the list there are three buttons, titled *Install...*, *Delete...* and *All*.  The *All* button allows you to quickly enable or disable all your plugins at once.  The *Delete...* button becomes available when you have a plugin selected and when clicked, after a confirmation, it will delete that plugin.  The *Install...* button is used to install a plugin you have downloaded from the Internet.  For example, from the [http://forums.x-plane.org/index.php?autocom=downloads Download Manager at X-Plane.org].  To install a new plugin, do the following:
 
  # Download the zip file containing the plugin
