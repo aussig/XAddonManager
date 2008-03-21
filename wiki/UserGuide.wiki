@@ -36,7 +36,7 @@ Once you have selected a valid X-Plane folder, XAM will load up the main window.
 
 At the top of the main window, the currently set X-Plane folder is displayed and alongside this is a button to allow you to choose a different folder.  This is useful if you have several installations of X-Plane on the same computer and you want to switch between them.
 
-Beneath this is the main area of the window, organised into either 3 or 4 tabs depending on what you have installed in your particular version of X-Plane.  The four tabs are titled *Custom Scenery Packages*, *Plugins*, *Aircraft* and *CSLs*.
+Beneath this is the main area of the window, organised into either 3 or 4 tabs depending on what you have installed in your particular version of X-Plane.  The four tabs are titled *Custom Scenery Packages*, *Plugins*, *Aircraft* and *CSLs*, but the CSLs tab may not appear, see below for a description of CSLs.
 
 === Custom Scenery Packages ===
 
@@ -49,19 +49,28 @@ This is the tab that is always first selected when you launch XAM.  At the top i
 || L || If a tick appears in this column, the scenery package contains a library of scenery objects.  For further information on X-Plane scenery libraries, here's a good [http://www.marginal.org.uk/x-planescenery/library_tutorial/index.html Tutorial by Jonathan Harris]. ||
 || ES || If a tick appears in this column, the package contains scenery for a part of the Earth.  ||
 || MS || If a tick appears in this column, the package contains scenery for a part of Mars.  ||
-|| EA || If a tick appears in this column, the package contains airport layouts for Earth. ||
-|| MA || If a tick appears in this column, the package contains airport layouts for Mars. ||
+|| EA || If a tick appears in this column, the package contains airport layout(s) for Earth. ||
+|| MA || If a tick appears in this column, the package contains airport layout(s) for Mars. ||
 || Plot || If a tick appears in this column, the package will be plotted on the world map in XAM.  *This doesn't affect X-Plane at all*, but can be useful to hide certain scenery packages that cover large areas of the map in XAM. ||
 || Enable || If a tick appears in this column, the package will load in X-Plane.  *If unchecked, the package will not be loaded in X-Plane*.  When you uncheck the 'Enable' checkbox, XAM will move the scenery package on disk into a folder titled 'Custom Scenery (disabled), located in your X-Plane folder. || 
 
 Enabled scenery packages are plotted on the map in green and disabled packages are plotted in red. When you click a package in the list, it will be highlighted on the map using a colour animation.  You can also click on the map and the nearest package to your click will be selected in the list.
+
+Between the list and the map there is a key to the columns in the list and three other buttons, titled 'Install...', 'Delete...' and 'All'.  The 'All' button allows you to quickly enable or disable all your scenery packages at once.  The 'Delete...' button becomes available when you have a scenery package selected and when clicked, after a confirmation, it will delete that package.  The 'Install...' button is used to install a scenery package you have downloaded from the Internet.  For example, from the [http://forums.x-plane.org/index.php?autocom=downloads Download Manager at X-Plane.org].  To install a new scenery package, do the following:
+
+
 
 
 === Plugins ===
 
 http://xaddonmanager.googlecode.com/svn/wiki/Plugins.png
 
-This whole tab consists of a list of all X-Plane plugins.  
+The entire Plugins tab consists of a list of all X-Plane plugins.  XAM looks for plugins in the `Resources/plugins` subfolder inside your X-Plane folder.  The list contains two columns, as follows:
+
+|| *Column Title* || *Description* ||
+|| Name || This is the name of the plugin.  There are a number of ways that a plugin can be packaged on disk, so this name may be taken either from the plugin filename or the folder containing the plugin.  See [PluginsAndXAM this page] for a more in-depth description of how XAM processes the plugins folder.  ||
+|| Enable || If a tick appears in this column, the plugin will load in X-Plane.  *If unchecked, the plugin will not be loaded in X-Plane*.  When you uncheck the 'Enable' checkbox, XAM will move the plugin on disk into a folder titled 'plugins (disabled), located in the `Resources` folder inside your X-Plane folder. || 
+ 
 
 === Aircraft ===
 
