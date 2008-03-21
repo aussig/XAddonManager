@@ -40,7 +40,18 @@ Beneath this is the main area of the window, organised into either 3 or 4 tabs d
 
 === Custom Scenery Packages ===
 
-This is the tab that is always first selected when you launch XAM.  At the top is displayed a list of all your Custom Scenery Packages, and at the bottom these scenery packages are plotted on a world map.  The list also contains a number of additional columns, which 
+This is the tab that is always first selected when you launch XAM.  At the top is displayed a list of all your Custom Scenery Packages, and at the bottom these scenery packages are plotted on a world map.  The list also contains a number of additional columns, which show extra information about each Scenery Package.  The information in the columns is as follows:
+
+|| *Column Title* || *Description* ||
+|| Name || This is the name of the scenery package and is taken from the folder name of the package on your disk ||
+|| L || If a tick appears in this column, the scenery package contains a library of scenery objects.  For further information on X-Plane scenery libraries, here's a good [http://www.marginal.org.uk/x-planescenery/library_tutorial/index.html Tutorial by Jonathan Harris]. ||
+|| ES || If a tick appears in this column, the package contains scenery for a part of the Earth.  ||
+|| MS || If a tick appears in this column, the package contains scenery for a part of Mars.  ||
+|| EA || If a tick appears in this column, the package contains airport layouts for Earth. ||
+|| MA || If a tick appears in this column, the package contains airport layouts for Mars. ||
+|| Plot || If a tick appears in this column, the package will be plotted on the world map in XAM.  *This doesn't affect X-Plane at all*, but can be useful to hide certain scenery packages that cover large areas of the map in XAM. ||
+|| Enable || If a tick appears in this column, the package will load in X-Plane.  *If unchecked, the package will not be loaded in X-Plane*.  When you uncheck the 'Enable' checkbox, XAM will move the scenery package on disk into a folder titled 'Custom Scenery (disabled), located in your X-Plane folder. || 
+Enabled scenery packages are plotted in green and disabled packages are plotted in red. When you click a package in the list, it will be highlighted on the map using a colour animation.  You can also click on the map and the nearest package to your click will be selected in the list.
 
 === Plugins ===
 
