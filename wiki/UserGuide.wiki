@@ -1,4 +1,4 @@
-#summary This is the user guide for XAddonManager
+#summary The user guide for XAddonManager
 #labels Featured
 
 = XAddonManager User Guide =
