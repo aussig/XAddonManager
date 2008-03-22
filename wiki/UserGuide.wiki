@@ -86,7 +86,27 @@ Beneath the list there are three buttons, titled *Install...*, *Delete...* and *
 
 http://xaddonmanager.googlecode.com/svn/wiki/Aircraft.png
 
-To Be Written...
+The aircraft panel works a little differently to the others, because the X-Plane aircraft folder is hierarchical and aircraft can be stored at any level.  To allow navigation of this hierarchy, folders are displayed with either a disclosure triangle (Mac) or +/- control (Linux / Windows).  Click this to open the folder and see its contents.  There are a number of additional columns, which show extra information about each Aircraft.  The information in the columns is as follows:
+
+|| *Column Title* || *Description* ||
+|| Name || This is the name of the aircraft and is taken from the folder name on disk.  ||
+|| 3D || If a tick appears in this column, the aircraft contains a 3d panel. ||
+|| A || If a tick appears in this column, the aircraft contains custom airfoils. ||
+|| S || If a tick appears in this column, the aircraft contains custom sounds. ||
+|| W || If a tick appears in this column, the aircraft contains custom weapon objects. ||
+|| P || If a tick appears in this column, the aircraft contains a plugin. ||
+|| G || If a tick appears in this column, the aircraft is [http://www.xpgoodway.com Goodway] enabled. ||
+
+Beneath the list there are two buttons, titled *Install...* and *Delete...*.  The *Delete...* button becomes available when you have an aircraft selected and when clicked, after a confirmation, it will delete that aircraft.  The *Install...* button is enabled when you have a folder selected and it is used to install an aircraft you have downloaded from the Internet.  For example, from the [http://forums.x-plane.org/index.php?autocom=downloads Download Manager at X-Plane.org].  To install a new aircraft, do the following:
+
+ # Download the zip file containing the aircraft
+ # In XAM, click *Install...* on the Aircraft screen
+ # XAM will ask you to locate the zip file, so navigate to where you downloaded it and select it
+ # XAM will unzip the file and examine it to check whether it really is an aircraft.  If it fails this check, a warning message will appear, otherwise the aircraft will be installed and the list will refresh
+
+Currently, there is no way to create a folder from inside XAM, so if you need new folders then create them through the operating system.
+
+
 
 === CSLs ===
 
