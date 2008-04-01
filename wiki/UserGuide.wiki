@@ -5,7 +5,7 @@
 
 XAddonManager (XAM) has been designed to be easy to use, but this page gives a quick run-through of its features and how to use them.
 
-
+----
 == Download and Install ==
 
 The application is distributed as a zip archive.  Click the download link for your platform (Mac / Linux / Windows) on the home page of this site to start the download.  After you've downloaded it, you will need to uncompress the zip and there are a number of different utilities that will do this.
@@ -22,7 +22,7 @@ You will need a utility such as [http://www.winzip.com/ WinZip].  Right-click th
 
 There will typically be an unzipping utility included with your distro.
 
-
+----
 == First Run ==
 
 The first time you run XAM, the software will ask you to locate your X-Plane folder.  In Windows, this is likely to be `C:\Program Files\X-Plane` or `C:\Program Files\X-System` or similar. On the Mac, it is likely to be `X-Plane` or `X-System` in your `Applications` folder. Note that the X-Plane folder may have the version appended (e.g. `X-Plane 8.50`).  If you choose a folder that XAM doesn't think is an X-Plane folder, you will get a warning and be asked to choose another folder. 
@@ -31,7 +31,7 @@ XAM will remember the folder you choose for the next time you run the applicatio
 
 Once you have selected a valid X-Plane folder, XAM will load up the main window.
 
-
+----
 == Main Window ==
 
 At the top of the main window, the currently set X-Plane folder is displayed and alongside this is a button to allow you to choose a different folder.  This is useful if you have several installations of X-Plane on the same computer and you want to switch between them.
