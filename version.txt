@@ -1,18 +1,1 @@
 1.1.0
-<html>
-<head>
-	<title>Latest Changes</title>
-</head>
-<body>
-	<h1>Latest Changes in Version 1.1.0</h1>
-	<ol>
-		<li>Added support for hiding scenery packages from the map</li>
-		<li>Added support for CSLs</li>
-		<li>Added version info to the built executables</li>
-		<li>Added an animated highlight for the currently selected scenery package on the map</li>
-		<li>Changed sort order so items beginning with '_' sort to the top</li>
-		<li>Now handles the case where there are multiple aircraft in one folder</li>
-		<li>The plugin installer was sometimes installing incorrect files, or no files at all</li>
-		<li>Added French, Italian, German and Catalan translations</li>
-	</ol>
-</body>
