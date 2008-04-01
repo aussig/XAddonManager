@@ -112,6 +112,17 @@ Currently, there is no way to create a folder from inside XAM, so if you need ne
 
 http://xaddonmanager.googlecode.com/svn/wiki/CSLs.png
 
-To Be Written...
+CSL (Common Shared Library) packages are collections of aircraft used when flying online, to allow the correct display of other people's aircraft.  This panel will only appear if you have the [http://xivap.linuxpunk.org/index.php/Download X-Ivap X-Plane plugin] installed.  The list contains two columns, as follows:
+
+|| *Column Title* || *Description* ||
+|| Name || This is the name of the CSL collection and is taken from the folder name of the collection on disk  ||
+|| Enable || If a tick appears in this column, the collection will be enabled the next time you load X-Plane.  *If unchecked, this CSL collection will not be loaded in X-Plane*.  When you uncheck the 'Enable' checkbox, XAM will move the CSL folder on disk into a folder titled 'CSLs (disabled), located in the `Resources/plugins/X-Ivap Resources` folder inside your X-Plane folder. ||
+
+Beneath the list there are three buttons, titled *Install...*, *Delete...* and *All*.  The *All* button allows you to quickly enable or disable all your CSLs at once.  The *Delete...* button becomes available when you have a CSL selected and when clicked, after a confirmation, it will delete that CSL.  The *Install...* button is used to install a CSL you have downloaded from the Internet.  For example, from the [http://forums.x-plane.org/index.php?autocom=downloads Download Manager at X-Plane.org].  To install a new CSL, do the following:
+
+ # Download the zip file containing the CSL
+ # In XAM, click *Install...* on the CSL screen
+ # XAM will ask you to locate the zip file, so navigate to where you downloaded it and select it
+ # XAM will unzip the file and examine it to check whether it really is a CSL.  If it fails this check, a warning message will appear, otherwise the CSL will be installed and the list will refresh
 
  
