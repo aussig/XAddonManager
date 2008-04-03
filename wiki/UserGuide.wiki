@@ -8,7 +8,7 @@ XAddonManager (XAM) has been designed to be easy to use, but this page gives a q
 ----
 == Download and Install ==
 
-The application is distributed as a zip archive.  Click the download link for your platform (Mac / Linux / Windows) on the home page of this site to start the download.  After you've downloaded it, you will need to uncompress the zip and there are a number of different utilities that will do this.
+The application is distributed as a zip archive for Mac and PC and a gzipped tarball for Linux.  Click the download link for your platform (Mac / Linux / Windows) on the home page of this site to start the download.  After you've downloaded it, you will need to uncompress the file and there are a number of different utilities that will do this.
 
 === Mac ===
 
@@ -20,7 +20,7 @@ You will need a utility such as [http://www.winzip.com/ WinZip].  Right-click th
 
 === Linux ===
 
-There will typically be an unzipping utility included with your distro.
+There be a utility included with your distro for extracting gzipped tarballs.
 
 ----
 == First Run ==
