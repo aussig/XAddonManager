@@ -1,0 +1,1 @@
+#tag ClassProtected Class DSFInherits LocationalSceneryObject	#tag Method, Flags = &h0		 Shared Function isDSF(folderItem as FolderItem) As boolean		  return folderItem.name.right(4) = ".dsf"		End Function	#tag EndMethodEnd Class#tag EndClass
