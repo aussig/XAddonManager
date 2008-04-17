@@ -1,0 +1,5 @@
+#summary A description of how XAddonManager processes the plugins folder
+
+= Plugins in XAddonManager =
+
+To be written
