@@ -6,6 +6,16 @@
 	<body>
 		<h1>Release Notes</h1>
 		
+		<h2>Version 1.2.0 - 2nd September 2008</h2>
+		<ol>
+			<li>New Feature: Groups.  Groups of addons can now be created, allowing for quick enabling and disabling of sets of addons at once.  Several users have requested this, and it can be used for many purposes.  For example, seasonal winter packages could be grouped so they can all be enabled at once, or certain packages and plugins could be grouped so they can be enabled for flying online.</li>
+			<li>Modification: The behaviour is now slightly different when installing addons - Previously, the application would allow you to install an addon with the same name as one that was currently <strong>disabled</strong>.  This meant that you could end up with disabled and enabled versions of the same addon, which could be confusing.  Now, the application will disallow this.</li>
+			<li>Modification: Made the column layout more consistent across all addon types.</li>
+			<li>Modification: Added rollover tooltip help to all controls.</li>
+			<li>Under the covers: Re-wrote all the message and error reporting. It now uses proper 'sheet' panels on the Mac and the display is better on Windows and Linux too - the correct info / warning / error icons are now displayed.</li>
+			<li>Under the covers: Re-wrote and extended the way preferences are stored.  Each X-Plane folder now has its own set of preferences, which means that as you switch folders XAM will remember which scenery packages you chose to plot on the map.  This work was also required to properly support the new Groups functionality mentioned above.</li>
+		</ol>
+
 		<h2>Version 1.1.1 - 1st April 2008</h2>
 		<ol>
 			<li>Fixed crashing bug when CSLs were disabled</li>
