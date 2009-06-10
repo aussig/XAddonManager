@@ -6,10 +6,10 @@ export COPYFILE_DISABLE=true
 VERSION=2.0.0b1
 
 echo ''
-echo 'Building Windows Package '$VERSION
+echo 'Building Mac Package '$VERSION
 echo '======================================'
 
-cd 'Builds - XAddonManager.rbvcp/Windows'
+cd 'Builds - XAddonManager.rbvcp/Mac OS X (Universal)'
 
-zip -r XAddonManager-$VERSION-Windows.zip XAddonManager
-mv XAddonManager-$VERSION-Windows.zip ../../XAddonManager-$VERSION-Windows.zip
+zip -r XAddonManager-$VERSION-Mac.zip XAddonManager.app
+mv XAddonManager-$VERSION-Mac.zip ../../XAddonManager-$VERSION-Mac.zip
