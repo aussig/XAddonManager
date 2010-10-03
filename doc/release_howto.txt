@@ -1,0 +1,26 @@
+Release How-to
+==============
+
+1. Update copyright notice to current year in wndAbout, all languages
+
+2. Update StageCode, ShortVersion and LongVersion in App to the release version numbers and copyright year
+
+3. Change kURLReleaseNotes constant in App to live releasenotes.html URL
+
+4. Change kURLVersion constant in App to live version.txt URL
+
+5. Copy all changes since previous release from devreleasenotes.html into releasenotes.html
+
+6. Update version.txt to the release version number
+
+7. Build the new versions
+
+8. Update version number in all packaging scripts
+
+9. Run packageall.sh
+
+10. Upload new versions to Google Code and set as featured releases
+
+11. Deprecate previous release and last dev release
+
+12. Commit changes to SVN, including release notes and version.txt changes (MUST be done LAST, because the automatic version checking directly queries the SVN committed files).
