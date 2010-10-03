@@ -63,6 +63,7 @@ Between the list and the map there is a key to the columns in the list and three
  # XAM will ask you to locate the zip file, so navigate to where you downloaded it and select it
  # XAM will unzip the file and examine it to check whether it really is a scenery package.  If it fails this check, a warning message will appear, otherwise the package will be installed and the list will refresh
 
+In addition, if a scenery package includes airports, it will have a fold-down control to the left of its name.  Opening this allows you to view the airports contained within the package. 
 
 === Plugins ===
 
@@ -81,6 +82,7 @@ Beneath the list there are three buttons, titled *Install...*, *Delete...* and *
  # XAM will ask you to locate the zip file, so navigate to where you downloaded it and select it
  # XAM will unzip the file and examine it to check whether it really is a plugin.  If it fails this check, a warning message will appear, otherwise the plugin will be installed and the list will refresh
 
+If you have Sandy Barbour's PythonInterface plugin installed (http://www.xpluginsdk.org/python_interface_downloads.htm) then it will have a fold-down control to the left of it's name.  Opening this allows you to view the installed Python scripts.
 
 === Aircraft ===
 
@@ -97,16 +99,12 @@ The aircraft panel works a little differently to the others, because the X-Plane
 || P || If a tick appears in this column, the aircraft contains a plugin. ||
 || G || If a tick appears in this column, the aircraft is [http://www.xpgoodway.com Goodway] enabled. ||
 
-Beneath the list there are two buttons, titled *Install...* and *Delete...*.  The *Delete...* button becomes available when you have an aircraft selected and when clicked, after a confirmation, it will delete that aircraft.  The *Install...* button is enabled when you have a folder selected and it is used to install an aircraft you have downloaded from the Internet.  For example, from the [http://forums.x-plane.org/index.php?autocom=downloads Download Manager at X-Plane.org].  To install a new aircraft, do the following:
+Beneath the list there are three buttons, titled *Install...*, *Delete...* and *New Folder...*.  The *Delete...* button becomes available when you have an aircraft selected and when clicked, after a confirmation, it will delete that aircraft.  The *New Folder...* button is enabled when you have a folder selected and when clicked, you will be asked for the name of the folder you wish to create. The folder will be created inside the folder you had selected. The *Install...* button is enabled when you have a folder selected and it is used to install an aircraft you have downloaded from the Internet.  For example, from the [http://forums.x-plane.org/index.php?autocom=downloads Download Manager at X-Plane.org].  To install a new aircraft, do the following:
 
  # Download the zip file containing the aircraft
  # In XAM, select the folder you want to install the aircraft in and click *Install...*
  # XAM will ask you to locate the zip file, so navigate to where you downloaded it and select it
  # XAM will unzip the file and examine it to check whether it really is an aircraft.  If it fails this check, a warning message will appear, otherwise the aircraft will be installed and the list will refresh
-
-Currently, there is no way to create a folder from inside XAM, so if you need new folders then create them through the operating system.
-
-
 
 === CSLs ===
 
