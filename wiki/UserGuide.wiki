@@ -82,7 +82,7 @@ Beneath the list there are three buttons, titled *Install...*, *Delete...* and *
  # XAM will ask you to locate the zip file, so navigate to where you downloaded it and select it
  # XAM will unzip the file and examine it to check whether it really is a plugin.  If it fails this check, a warning message will appear, otherwise the plugin will be installed and the list will refresh
 
-If you have Sandy Barbour's PythonInterface plugin installed (http://www.xpluginsdk.org/python_interface_downloads.htm) then it will have a fold-down control to the left of it's name.  Opening this allows you to view the installed Python scripts.
+If you have [http://www.xpluginsdk.org/python_interface_downloads.htm Sandy Barbour's PythonInterface plugin] installed then it will have a fold-down control to the left of it's name.  Opening this allows you to view the installed Python scripts.
 
 === Aircraft ===
 
