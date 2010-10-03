@@ -1,0 +1,4 @@
+Future Ideas List
+=================
+
+o Use Google Maps
