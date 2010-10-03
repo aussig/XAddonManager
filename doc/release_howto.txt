@@ -19,8 +19,10 @@ Release How-to
 
 9. Run packageall.sh
 
-10. Upload new versions to Google Code and set as featured releases
+10. Upload new versions to Google Code and set as Featured and LatestStable releases
 
 11. Deprecate previous release and last dev release
 
 12. Commit changes to SVN, including release notes and version.txt changes (MUST be done LAST, because the automatic version checking directly queries the SVN committed files).
+
+13. Promote on x-plane.org
