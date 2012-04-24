@@ -2,3 +2,5 @@ Future Ideas List
 =================
 
 o Use Google Maps
+
+o Stop the app creating the Aircraft (disabled) folder
