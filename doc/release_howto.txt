@@ -13,16 +13,18 @@ Release How-to
 
 6. Update version.txt to the release version number
 
-7. Build the new versions
+7. Clear the database
 
-8. Update version number in all packaging scripts
+8. Build the new versions
 
-9. Run packageall.sh
+9. Update version number in all packaging scripts
 
-10. Upload new versions to Google Code and set as Featured and LatestStable releases
+10. Run packageall.sh
 
-11. Deprecate previous release and last dev release
+11. Upload new versions to Google Code and set as Featured and LatestStable releases
 
-12. Commit changes to SVN, including release notes and version.txt changes (MUST be done LAST, because the automatic version checking directly queries the SVN committed files).
+12. Deprecate previous release and last dev release
 
-13. Promote on x-plane.org
+13. Commit changes to SVN, including release notes and version.txt changes (MUST be done LAST, because the automatic version checking directly queries the SVN committed files).
+
+14. Promote on x-plane.org
