@@ -1,0 +1,16 @@
+#tag FileTypeSet
+	#tag FileType
+		CodeName=ApplicationZip
+		Extension=.zip
+		Flags=&h0
+		MacCreator=SITx
+		MacType=ZIP
+		Name=application/zip
+		UTI=
+		UTIConformsTo=
+		Description=
+		MimeType=
+		Imported=True
+	#tag EndFileType
+
+#tag EndFileTypeSet
