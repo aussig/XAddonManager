@@ -1,1 +1,0 @@
-#tag FileTypeSet	#tag FileType		CodeName=ApplicationZip		Extension=.zip		Flags=&h0		MacCreator=SITx		MacType=ZIP		Name=application/zip	#tag EndFileType#tag EndFileTypeSet
