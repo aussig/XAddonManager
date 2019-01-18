@@ -1,5 +1,5 @@
 Type=Desktop
-RBProjectVersion=2018.011
+RBProjectVersion=2018.04
 MinIDEVersion=20070100
 Class=App;App.xojo_code;&h000000002C1F4DE4;&h0000000000000000;false
 MenuBar=MenuBar1;MenuBar1.xojo_menu;&h000000001459F8F8;&h0000000000000000;false
@@ -34,7 +34,6 @@ Interface=FolderTraversalCallbackInterface;Interfaces/FolderTraversalCallbackInt
 Folder=Modules;Modules;&h000000004863AD30;&h0000000000000000;false
 Module=Utilities;Modules/Utilities.xojo_code;&h000000003E475564;&h000000004863AD30;false
 Class=ExtendedCheckBox;Classes/ExtendedCheckBox.xojo_code;&h000000006CBC7B05;&h0000000023186DD5;false
-Class=BufferedCanvas;Classes/BufferedCanvas.xojo_code;&hFFFFFFFFBEB142F9;&h0000000023186DD5;false
 Class=UnzipThread;Classes/UnzipThread.xojo_code;&h0000000067BD6B82;&h0000000023186DD5;false
 Folder=Images;Images;&h000000000F7C64ED;&h0000000000000000;false
 FileTypeSet=FileTypes1;FileTypes1.xojo_filetypeset;&h00000000132F0C08;&h0000000000000000;false
