@@ -62,7 +62,7 @@ Begin Window wndMain
          Bold            =   False
          ButtonStyle     =   "0"
          Cancel          =   False
-         Caption         =   "#App.kDownloadInstallPrompt"
+         Caption         =   "#App.kInstallPrompt"
          Default         =   False
          Enabled         =   False
          Height          =   27
@@ -2740,8 +2740,8 @@ End
 #tag Events btnAddScenery
 	#tag Event
 		Sub Action()
-		  wndInstallSceneryPackage.show
-		  'addSceneryPackage
+		  'wndInstallSceneryPackage.show
+		  addSceneryPackage
 		End Sub
 	#tag EndEvent
 #tag EndEvents
