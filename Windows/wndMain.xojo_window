@@ -1085,7 +1085,6 @@ Begin Window wndMain
       Width           =   80
    End
    Begin Timer tmrMapRefresh
-      Enabled         =   True
       Index           =   -2147483648
       InitialParent   =   ""
       LockedInPosition=   False
@@ -1098,7 +1097,6 @@ Begin Window wndMain
       Address         =   ""
       BytesAvailable  =   0
       BytesLeftToSend =   0
-      Enabled         =   True
       Handle          =   0
       httpProxyAddress=   ""
       httpProxyPort   =   0
@@ -1437,7 +1435,6 @@ Begin Window wndMain
       Width           =   120
    End
    Begin Timer tmrCheckAirportFolderParsed
-      Enabled         =   True
       Index           =   -2147483648
       InitialParent   =   ""
       LockedInPosition=   False
@@ -1698,6 +1695,38 @@ End
 		      dim result as Integer = App.displayMessage(kErrorNotValidCompressedPluginPackage, "", MessageDialog.GraphicCaution, App.kOk, "", "", me)
 		    else
 		      Plugin.install(sourceFolderItem)
+		      scanXPlaneFolder()
+		      return
+		    end if
+		  wend
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub addSceneryPackage()
+		  dim dialog as SelectFolderDialog
+		  dim folderItem as FolderItem
+		  
+		  dim zipType As new FileType
+		  zipType.Name = "application/zip"
+		  zipType.MacType = "ZIP "
+		  zipType.Extensions = "zip"
+		  
+		  while true
+		    folderItem = getOpenFolderItem(zipType)
+		    
+		    if (folderItem = nil) then
+		      return
+		    end if
+		    
+		    dim sourceFolderItem as FolderItem = Addon.extractZipToTemporaryLocation(folderItem)
+		    if sourceFolderItem = nil then return
+		    sourceFolderItem = AddOn.searchForAddon(sourceFolderItem, "CustomSceneryPackage")
+		    
+		    if sourceFolderItem = nil then
+		      dim result as Integer = App.displayMessage(kErrorNotValidCompressedSceneryPackage, "", MessageDialog.GraphicCaution, App.kOk, "", "", me)
+		    else
+		      CustomSceneryPackage.install(sourceFolderItem)
 		      scanXPlaneFolder()
 		      return
 		    end if
@@ -2484,6 +2513,14 @@ End
 		#Tag Instance, Platform = Any, Language = es, Definition  = \"No has seleccionado un plugin comprimido. Por favor intenta de nuevo."
 	#tag EndConstant
 
+	#tag Constant, Name = kErrorNotValidCompressedSceneryPackage, Type = String, Dynamic = True, Default = \"You did not select a compressed scenery package.  Please try again.", Scope = Public
+		#Tag Instance, Platform = Any, Language = ca, Definition  = \"No heu seleccionat un paquet d\'escenari comprimit. Torneu-ho a provar."
+		#Tag Instance, Platform = Any, Language = it, Definition  = \"Non hai selezionato un archivio compresso dello scenario. Per favore riprova."
+		#Tag Instance, Platform = Any, Language = fr, Definition  = \"Vous n\'avez pas s\xC3\xA9lectionner une archive contenant une sc\xC3\xA8ne. Recommencez SVP."
+		#Tag Instance, Platform = Any, Language = de, Definition  = \"Sie haben kein komprimiertes Scenery Packet ausgew\xC3\xA4hlt\x2C versuchen sie es bitte erneut."
+		#Tag Instance, Platform = Any, Language = es, Definition  = \"No has seleccionado un paquete de escenario comprimido. Por favor\x2C intenta de nuevo."
+	#tag EndConstant
+
 	#tag Constant, Name = kExtractionFailed, Type = String, Dynamic = True, Default = \"Extraction of \"${1}\" failed: \"${2}\"", Scope = Public
 		#Tag Instance, Platform = Any, Language = es, Definition  = \"Extracci\xC3\xB3n de \"${1}\" fall\xC3\xB3: \"${2}\""
 		#Tag Instance, Platform = Any, Language = fr, Definition  = \"L\'extraction de \"{1}\" a \xC3\xA9chou\xC3\xA9e:\"{2}\""
@@ -2703,8 +2740,8 @@ End
 #tag Events btnAddScenery
 	#tag Event
 		Sub Action()
-		  wndInstallSceneryPackage.show()
-		  
+		  wndInstallSceneryPackage.show
+		  'addSceneryPackage
 		End Sub
 	#tag EndEvent
 #tag EndEvents
