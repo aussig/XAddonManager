@@ -1028,7 +1028,7 @@ Begin Window wndMain
       AcceptFocus     =   False
       AcceptTabs      =   False
       AutoDeactivate  =   True
-      Backdrop        =   1638712966
+      Backdrop        =   0
       DoubleBuffer    =   False
       Enabled         =   True
       EraseBackground =   True
@@ -1048,7 +1048,7 @@ Begin Window wndMain
       TabStop         =   True
       Top             =   14
       Transparent     =   True
-      UseFocusRing    =   True
+      UseFocusRing    =   False
       Visible         =   True
       Width           =   64
    End
@@ -3244,6 +3244,12 @@ End
 		Function MouseDown(X As Integer, Y As Integer) As Boolean
 		  showURL(App.kURLWebsite)
 		End Function
+	#tag EndEvent
+	#tag Event
+		Sub Paint(g As Graphics, areas() As REALbasic.Rect)
+		  g.DrawPicture(imgIcon, 0, 0, imgIcon.Width * 0.5, imgIcon.Height * 0.5, 0, 0, imgIcon.Width, imgIcon.Height)
+		  
+		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events btnSetXPlaneFolder
