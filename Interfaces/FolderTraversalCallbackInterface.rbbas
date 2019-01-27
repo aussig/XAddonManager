@@ -1,1 +1,0 @@
-#tag InterfaceProtected Interface FolderTraversalCallbackInterface	#tag Method, Flags = &h0		Sub folderTraversalCallback(folderItem as FolderItem, data as variant)		  		End Sub	#tag EndMethodEnd Interface#tag EndInterface
