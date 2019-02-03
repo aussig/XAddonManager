@@ -378,7 +378,7 @@ Begin Window wndMain
          TabPanelIndex   =   1
          TabStop         =   True
          Top             =   414
-         Transparent     =   True
+         Transparent     =   False
          UseFocusRing    =   False
          Visible         =   True
          Width           =   720
@@ -1135,7 +1135,7 @@ Begin Window wndMain
       TabPanelIndex   =   0
       TabStop         =   True
       Top             =   -129
-      Transparent     =   True
+      Transparent     =   False
       UseFocusRing    =   False
       Visible         =   False
       Width           =   100
@@ -1515,7 +1515,8 @@ End
 		    pZoomedMap = new Picture(imgWorldmap.width, imgWorldmap.height, 32)
 		    plotPackages(pZoomedMap.graphics, cnvZoom, App.kMapZoomFactor)
 		    
-		    sckVersionChecker.get(App.kURLVersion)
+		    // Temporarily disabled, was using old Google Code URL 
+		    'sckVersionChecker.get(App.kURLVersion)
 		  end if
 		End Sub
 	#tag EndEvent
