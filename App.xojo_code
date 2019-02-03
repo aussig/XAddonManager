@@ -12,9 +12,11 @@ Inherits Application
 	#tag Event
 		Sub Open()
 		  // Check whether we are running as an administrator.  If not, re-run as admin.  This is only applicable on Windows.
-		  if not isUserLocalAdministrator() then
-		    rerunAsAdministrator()
-		  end if
+		  #if TargetWindows then
+		    if not isUserLocalAdministrator() then
+		      msgbox("The application is not running as an administrator. This may cause problems if your X-Plane folder is in a secure location such as 'Program Files'. Re-run as administrator if you encounter problems.")
+		    end if
+		  #endif
 		  
 		  // Remove the separator under the help item if we're not on a Mac (no separator needed in Help menu on Windows and Linux)
 		  #if not TargetMacOS
